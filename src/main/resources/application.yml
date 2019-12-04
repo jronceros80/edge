@@ -4,6 +4,10 @@ zuul:
       path: /greeting/**
       serviceId: GREETING-SERVICE
       stripPrefix: false
+    products:
+      path: /product/**
+      serviceId: product-service
+      stripPrefix: false
       
 # Discovery Server Access
 eureka:
@@ -13,4 +17,5 @@ eureka:
       defaultZone: http://localhost:1111/eureka/
  
 server:
-  port: 8080   # HTTP (Tomcat) port
+  port: 8081   # HTTP (Tomcat) port
+  
